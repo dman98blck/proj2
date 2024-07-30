@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product - E-commerce</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="java.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Product Page</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="category.html">Categories</a></li>
+                <li><a href="customersupport.html">Customer Support</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="product-details">
+            <div class="image-carousel">
+                <img id="main-image" src="images/product1.jpg" alt="Product Image">
+                <div class="carousel-thumbnails">
+                    <img src="images/product1.jpg" alt="Thumbnail 1" onclick="changeImage('images/product1.jpg')">
+                    <img src="images/product2.jpg" alt="Thumbnail 2" onclick="changeImage('images/product2.jpg')">
+                </div>
+            </div>
+            <div class="details">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <p>Price: $99.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+        <section class="reviews">
+            <h3>Customer Reviews</h3>
+            <form id="review-form">
+                <input type="text" id="reviewer" placeholder="Your name" required>
+                <textarea id="review-text" placeholder="Your review" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="reviews-list"></div>
+        </section>
+    </main>
+</body>
+</html>

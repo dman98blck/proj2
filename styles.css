@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+}
+
+.product-details {
+    display: flex;
+}
+
+.image-carousel {
+    flex: 1;
+}
+
+.carousel-thumbnails img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.details {
+    flex: 2;
+    padding-left: 2em;
+}
+
+.reviews {
+    margin-top: 2em;
+}
+
+#reviews-list {
+    margin-top: 1em;
+}
+
+#review-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#review-form input, #review-form textarea {
+    margin-bottom: 1em;
+    padding: 0.5em;
+}
+
+#review-form button {
+    padding: 0.5em;
+}
